@@ -9,8 +9,8 @@ public class Hello {
     public static void weave(String[][] rug) {
         // Method to print 2D emoji arrays.
         for (String[] rug1 : rug) {
-            for (String rug11 : rug1) {
-                System.out.print(rug11);
+            for (String item : rug1) {
+                System.out.print(item);
             }
             // Break the line at the end of every row.
             System.out.println("");
@@ -20,9 +20,9 @@ public class Hello {
     public static String[][] solid(int width, int height) {
         String[][] rug = new String[width][height];
 
-        for (String[] rug1 : rug) {
-            for (int j = 0; j < rug1.length; j++) {
-                rug1[j] = "🥓🍤";
+        for(int i = 0; i < rug.length; i++) {
+            for(int j = 0; j < rug[i].length; j++) {
+                rug[i][j] = "🍤";
             }
         }
 
@@ -30,4 +30,3 @@ public class Hello {
     }
     
 }
-
