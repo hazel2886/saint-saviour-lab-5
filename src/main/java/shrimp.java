@@ -1,6 +1,6 @@
 package main.java;
 
-public class Hello {
+public class shrimp {
     public static void main(String[] args) {
         // System.out.println("new dawn, new day");
         weave(solid(11, 11));
@@ -20,9 +20,9 @@ public class Hello {
     public static String[][] solid(int width, int height) {
         String[][] rug = new String[width][height];
 
-        for(int i = 0; i < rug.length; i++) {
-            for(int j = 0; j < rug[i].length; j++) {
-                rug[i][j] = "🍤";
+        for (String[] rug1 : rug) {
+            for (int j = 0; j < rug1.length; j++) {
+                rug1[j] = "🍤";
             }
         }
 
